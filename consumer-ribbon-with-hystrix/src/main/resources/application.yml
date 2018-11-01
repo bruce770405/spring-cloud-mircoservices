@@ -1,0 +1,14 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consumer-ribbon-with-hystrix
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    hostname: ribbon
+    # preferIpAddress不設定或設為false，
+    # 不能設為true，否則影響turbine的測試。turbine存在的問題：eureka.instance.hostname一至時只能檢測到一個節點，
+    # 會造成 turbine 不完整

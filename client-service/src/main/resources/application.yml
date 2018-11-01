@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: bookservice
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test;MODE=MySQL;DB_CLOSE_DELAY=-1
+    sql-script-encoding: UTF-8
+
+server:
+  port: 2000
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: H2
+    show-sql: true
+    generate-ddl: false
+
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.itmuch.youran.persistence: ERROR
+
+#  management.security.enabled: true
+
+#  security:
+#    user:
+#      name: admin
+#      password: admin123
+
+#### eureka 相關設定 ####
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+#      username: ${security.user.name}
+#      password: ${security.user.password}
+#### eureka 相關設定 ####

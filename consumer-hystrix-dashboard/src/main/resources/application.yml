@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: consumer-hystrix-dashboard
+server:
+  port: 9002
