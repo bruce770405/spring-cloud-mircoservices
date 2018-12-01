@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/eacdy/spring-cloud-pom/     # 配置git url
+          uri: https://github.com/bruce770405/Spring_Cloud_To_Implement_mircoservice/    # 配置git url
           search-paths: config-repo                             # git url 下的相對位置，可以配置多個，用,分割。
-          username:                                             # git username
+          username:bruce770405                                  # git username
           password:                                             # git password
