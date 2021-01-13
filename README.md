@@ -1,6 +1,6 @@
 # Spring Cloud To Implement mircoservice
 
-this is a demo project for spring clound
+this is a demo microservices base on spring clound
 
 ## Use Technology
 * Java 8
